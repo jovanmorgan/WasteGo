@@ -1,3 +1,8 @@
 {
-  "builds": [{ "src": "index.html", "use": "@vercel/php" }]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
